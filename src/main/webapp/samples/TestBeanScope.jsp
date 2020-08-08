@@ -12,7 +12,7 @@
     <title>TestBeanScope</title>
 </head>
 <body>
-<h1>Testing Bean Scope in JSP (Application</h1>
+<h1>Testing Bean Scope in JSP (Application)</h1>
 <p><%count.increaseCount();%>
     You are visitor number <%= count.getCount() %><br>
     From host: <%= request.getRemoteHost() %>
