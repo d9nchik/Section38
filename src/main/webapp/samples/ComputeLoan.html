@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>ComputeLoan</title>
+</head>
+<body>
+<h1>Compute Loan Payment</h1>
+<form method="POST" action="ComputeLoan.jsp">
+    <label>
+        Loan Amount
+        <input type="text" name="loanAmount" required>
+    </label><br>
+    <label>
+        Annual Interest Rate
+        <input type="text" name="annualInterestRate" required>
+    </label><br>
+    <label>
+        Number of Years
+        <input required type="number" min="1" name="numberOfYears" size="3">
+    </label><br>
+    <input type="submit" name="Submit"
+           value="Compute Loan Payment">
+    <input type="reset" value="Reset">
+</form>
+</body>
+</html>
