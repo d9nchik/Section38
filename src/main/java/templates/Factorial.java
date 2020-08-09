@@ -1,5 +1,7 @@
 package templates;
 
+import java.math.BigInteger;
+
 @SuppressWarnings("unused")
 public class Factorial {
     private int number;
@@ -25,10 +27,10 @@ public class Factorial {
      *
      * @return result of calculation
      */
-    public long getFactorial() {
-        long factorial = 1;
+    public BigInteger getFactorial() {
+        BigInteger factorial = BigInteger.ONE;
         for (int i = 1; i <= number; i++)
-            factorial *= i;
+            factorial = factorial.multiply(new BigInteger("" + i));
         return factorial;
     }
 }
