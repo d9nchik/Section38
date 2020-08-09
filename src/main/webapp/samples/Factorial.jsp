@@ -6,21 +6,27 @@
   To change this template use File | Settings | File Templates.
 --%>
 <%@ page contentType="text/html;charset=UTF-8" %>
+<jsp:useBean id="factorial" class="templates.Factorial"/>
+<jsp:setProperty name="factorial" property="*"/>
 <!DOCTYPE html>
 <html>
 <head>
     <title>Factorial</title>
 </head>
 <body>
-<% for (int i = 0; i <= 10; i++) { %>
-Factorial of <%= i %> is
-<%= computeFactorial(i) %> <br>
-<% } %>
-<%! private long computeFactorial(int n) {
-    if (n == 0)
-        return 1;
-    else
-        return n * computeFactorial(n - 1);
-}%>
+<h1>Compute Factorial Using</h1>
+<form method="post">
+    <label>Enter new value:
+        <input name="number" type="number" min="0">
+    </label><br>
+    <input type="submit" name="Submit"
+           value="Compute Factorial">
+    <input type="reset" value="Reset"/><br>
+</form>
+<p>Factorial of
+    <jsp:getProperty name="factorial" property="number"/>
+    is <%=factorial.getFactorial()%>
+</p>
+
 </body>
 </html>
