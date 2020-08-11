@@ -18,3 +18,17 @@ input[type="number"] {
 #normalNumber {
     width: 5em;
 }
+
+.block {
+    width: 10em;
+    border: 2px solid black;
+    margin: 10px;
+    float: left;
+}
+
+
+input[value="Find Date"] {
+    display: block;
+    clear: both;
+    margin: 0 0 0 10px;
+}
