@@ -13,7 +13,7 @@
     <link rel="stylesheet" href="${pageContext.request.contextPath}/css/main.css">
 </head>
 <body>
-<form>
+<form method="post" action="Results.jsp">
     <% ArrayList<Integer> aS = new ArrayList<>();
         ArrayList<Integer> bS = new ArrayList<>();
 
