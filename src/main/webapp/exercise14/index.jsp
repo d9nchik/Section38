@@ -14,16 +14,22 @@
 </head>
 <body>
 <form>
-    <% ArrayList<Integer> list = new ArrayList<>();
-        session.setAttribute("answers", list);
+    <% ArrayList<Integer> aS = new ArrayList<>();
+        ArrayList<Integer> bS = new ArrayList<>();
+
+        session.setAttribute("a", aS);
+        session.setAttribute("b", bS);
+
         Random random = new Random();
         for (int i = 0; i < 10; i++) {
             int a = random.nextInt(25) + 1;
             int b = random.nextInt(25) + 1;
-            list.add(a + b); %>
+            aS.add(a);
+            bS.add(b);
+    %>
     <label>
         <%=a%> + <%=b%> =
-        <input type="number" min="0" max="50" required>
+        <input name="<%=i%>" type="number" min="0" max="50" required>
     </label><br>
     <% } %>
     <input type="submit" value="Submit"> Click the browser's refresh to get a new quiz
