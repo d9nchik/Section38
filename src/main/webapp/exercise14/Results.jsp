@@ -13,7 +13,7 @@
 <body>
 <% ArrayList<Integer> aS = (ArrayList<Integer>) session.getAttribute("a");
     ArrayList<Integer> bS = (ArrayList<Integer>) session.getAttribute("b");
-    if (aS == null || aS.size() != request.getCookies().length) {%>
+    if (aS == null || aS.size() != request.getParameterMap().size()) {%>
 <jsp:forward page="index.jsp"/>
 <%
 } else {
