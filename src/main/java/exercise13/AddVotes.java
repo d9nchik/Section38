@@ -42,7 +42,7 @@ public class AddVotes {
         }
     }
 
-    private static class YesNoCounts {
+    public static class YesNoCounts {
         private int yes;
         private int no;
 
