@@ -14,3 +14,7 @@ body {
 input[type="number"] {
     width: 3.5em;
 }
+
+#normalNumber {
+    width: 5em;
+}

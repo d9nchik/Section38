@@ -5,11 +5,12 @@
   Time: 20:43
   To change this template use File | Settings | File Templates.
 --%>
-<%@ page contentType="text/html;charset=UTF-8" language="java" %>
+<%@ page contentType="text/html;charset=UTF-8" %>
 <jsp:useBean id="guessNumber" class="exercise20.GuessNumber" scope="session"/>
 <html>
 <head>
     <title>Guess Number</title>
+    <link rel="stylesheet" href="../css/main.css">
 </head>
 <body>
 <h1>Guess numbers</h1>
@@ -21,7 +22,7 @@
 
     <label>
         Your number
-        <input name="guess" type="number" min="0" max="1000" required>
+        <input id="normalNumber" name="guess" type="number" min="0" max="1000" required>
     </label><br>
     <input type="submit" value="Submit">
 </form>
