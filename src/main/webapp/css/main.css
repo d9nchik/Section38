@@ -10,3 +10,7 @@ th, tfoot, thead {
 body {
     background-color: bisque;
 }
+
+input[type="number"] {
+    width: 3.5em;
+}
